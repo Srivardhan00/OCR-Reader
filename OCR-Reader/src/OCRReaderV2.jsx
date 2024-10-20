@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Tesseract from "tesseract.js";
 import ImageUpload from "./imageUpload";
 import * as tf from "@tensorflow/tfjs";

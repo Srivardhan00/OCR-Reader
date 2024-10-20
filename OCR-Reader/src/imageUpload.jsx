@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const ImageUpload = ({ onImageChange }) => {
   const handleImageUpload = (event) => {
@@ -17,6 +17,10 @@ const ImageUpload = ({ onImageChange }) => {
       <input type="file" onChange={handleImageUpload} accept="image/*"></input>
     </div>
   );
+};
+
+ImageUpload.propTypes = {
+  onImageChange: PropTypes.func.isRequired, // Validate that onImageChange is a function and required
 };
 
 export default ImageUpload;
